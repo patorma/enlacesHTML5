@@ -12,11 +12,28 @@
         atributo href="" que señalará su destino.
         No confundir con la etiqueta <link>
     -->
+    <h1>Enlaces</h1>
    <p> <a href="https://ed.team/cursos">Ir a los cursos</a></p>
 
     <!-- Si queremos que el destino se abra en una nueva ventana (o pestaña) 
      se usa el atributo target="_blank"-->
 <p><a href="https://ed.team/cursos" target="_blank">Ir a los cursos (en una nueva ventana)</a></p>
     
+<!--Rutas
+    las ruras le indican al sistema como acceder a un recurso (como encontrarlo).
+    Hay tres tipos de rutas:
+    *Absolutas. Son url únicas, y comienzan con un protocolo, el más conocido es http:// 
+    (hay otros como https://)
+    *Relativas. Son relativas al archivo de origen(al que estamos trabajando) 
+        *Origen y destino en la misma carpeta. Se pone el nombre del archivo. 
+        *El destino está en una subcarpeta. En ese caso se indica la ruta separando las carpetas
+         con el signo / (slash) hasta llegar al archivo de destino. Nunca se debe comenzar con 
+         un slash (/)
+    *Relativas a la raíz
+                                -->
+ <p><a href="destino.html">Ir al destino</a></p>
+
+ <p><a href="subcarpeta/destino2.html">Ir al destino 2</a></p>
+ <p><a href="subcarpeta/subcarpeta2/destino3.html">Ir al destino 3</a></p>
 </body>
 </html>
