@@ -7,6 +7,56 @@
     <title>Listas HTML</title>
 </head>
 <body>
-    
+    <h1>Listas HTML</h1>
+    <section>
+        <!--Existen tres tipos de listas en HTML:
+
+            <ol></ol>   (ordered list) listas con números ordenadas
+            <ul></ul>   (unordered list) no se especifica el orden de la lista (sin números)
+            <dl></dl>   (definition list) lista de definición enciclopedias, glosarios
+            
+            <ul></ul> y <ol></ol> son contenedores de listas. Y cada item de la lista se
+            indica con <li></li> (list item)
+        -->
+        <h2>Listas ol y ul</h2>
+        <ol>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miércoles</li>
+        </ol>
+        <ul>
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miércoles</li>
+        </ul>
+    </section>
+    <section>
+        <!--
+        Pueden anidarse listas (es decir, una dentro de otra) sin limite.Incluso
+        se pueden combinar <ol></ol> y <ul></ul>.
+        Para hacerlo, la lista hija debe estar dentro de un <li></li>, y justo antes de la etiqueta de cierre
+        </li>
+        -->
+        <h2>Listas anidadas</h2>
+        <ol>
+                <li>Lunes
+                    <ul>
+                        <li>Llevar al perro al veterinario</li>
+                        <li>Visitar a mi dentista</li>
+                    </ul>
+                </li>
+                <li>Martes
+                    <ul>
+                        <li>Presentar el proyecto de tesis a la UCSC</li>
+                        <li>Lllevar la ropa a la lavanderia</li>
+                    </ul>
+                </li>
+                <li>Miércoles
+                    <ul>
+                        <li>Clase de HTML5</li>
+                    </ul>
+                </li>
+         </ol>
+    </section>
 </body>
 </html>
