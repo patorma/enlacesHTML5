@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            padding-bottom: 15em;
+        }
+        table {
+            border: 1px solid #bbb;
+            margin-bottom: 1em; /*para separar y no esten pegadas*/
+            width: 100%;/*width es el ancho*/
+            border-collapse: collapse;/*propiedad de css que fusiona bordes anteriores*/
+        }
+        td ,th{
+            border: 1px solid #bbb;
+            line-height: 1.7;
+            text-align: center;
+        }
+        th {
+            background: #f5f5f5;
+        }
+        tr:hover{
+            background: #eee;/*que al pasar el mouse(hover)cambie de color*/
+        }
+    </style>
     <title>Tablas HTML</title>
 </head>
 <body>
@@ -20,12 +42,12 @@
         <td></td> (table-data, aquí se insertan los datos)
         -->
         <h2>Etiquetas table, tr, td</h2>
-        <table border="1">
+        <table>
             <tr>
                 <td>Hola mundo</td>
             </tr>
         </table>
-        <table border="1">
+        <table>
             <tr>
                 <td>1</td>
                 <td>2</td>
@@ -34,6 +56,95 @@
                 <td>3</td>
                 <td>4</td>
             </tr>
+        </table>
+    </section>
+    <section>
+          <h2>th, thead, tbody, tfoot</h2>
+            <!--
+            <th></th> Son cabeceras de columnas. Van dentro del primer <tr></tr> de ser 
+            necesario
+        -->
+        <table>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+            </tr>
+            <tr>
+                <td>Ir al veterinario</td>
+                <td>Ir al dentista</td>
+                <td>Curso HTML5</td>
+            </tr>
+            <tr>
+                <td>Universidad</td>
+                <td>Lavanderia</td>
+                <td>Curso HTML5</td>
+             </tr>
+        </table>
+                            
+        <!--<thead></thead> es la cabecera e incluye a los <th></th>
+            <tbody></tbody> es el cuerpo e incluye a los datos
+            <tfoot></tfoot> es el puie y debe ir antes de <tbody></tbody>-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Productos vendidos</th>
+                    <th>Ingresos</th>
+                    <th>Impuestos</th>
+                    <th>Ganancia</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total</td>
+                    <td>$2400.00</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Enero</td>
+                    <td>10</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Febrero</td>
+                    <td>10</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>10</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                </tr>
+                 <tr>
+                    <td>Abril</td>
+                    <td>10</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Mayo</td>
+                    <td>10</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Junio</td>
+                    <td>10</td>
+                    <td>$500.00</td>
+                    <td>$100.00</td>
+                    <td>$400.00</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 </body>
