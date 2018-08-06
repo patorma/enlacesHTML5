@@ -180,15 +180,19 @@
         </table>
         <!-- <colgroup></colgroup> Se utiliza para definir atributos para columnas. Dentro
             de ella deben ir etiquetas <col> que representen a cada columna. Usando el atributo
-            span="numero" en <col> se puede referenciar a varias columnas.
+            span="numero" en <col> se puede referenciar a varias columnas. En otras palabras permite
+            referenciar otras columnas
 
             Se pueden añadir atributos que se apliquen a toda la columna
          -->
          <table>
              <colgroup>
-                
-                <col span="3">
-                <col class="yellow">
+                <col style="background:yellow">
+                <col style="background:red" span="2"><!--representa a la columna dos y 3-->
+               
+                <col style="background:green">
+                <col style="background:blue">
+               
             </colgroup>
              <tr>
                  <td>1</td>
