@@ -147,5 +147,81 @@
             </tbody>
         </table>
     </section>
+    <section>
+        <h2>caption, colgroup, col, colspan y rowspan</h2>
+        <!-- <caption></caption> se usa para nombrar a la tabla. 
+        Debe ir inmediatamente después de la etiqueta de apertura
+        <table>-->
+
+        <table>
+            <caption>Registrados al evento</caption>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Telefono</th>
+            </tr>
+            <tr>
+                <td>Patricio</td>
+                <td>Contreras</td>
+                <td>patorma@yahoo.com</td>
+                <td>946369899</td>
+            </tr>
+            <tr>
+                <td>Patricio</td>
+                <td>Contreras</td>
+                <td>patorma@yahoo.com</td>
+                <td>946369899</td>
+            </tr>
+        </table>
+        <!-- <colgroup></colgroup> Se utiliza para definir atributos para columnas. Dentro
+            de ella deben ir etiquetas <col> que representen a cada columna. Usando el atributo
+            span="numero" en <col> se puede referenciar a varias columnas.
+
+            Se pueden añadir atributos que se apliquen a toda la columna
+         -->
+         <table>
+             <colgroup>
+                
+                <col span="3">
+                <col style="background: yellow">
+            </colgroup>
+             <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+                 <td>5</td>
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+                 <td>5</td>
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+                 <td>5</td>
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+                 <td>5</td>
+             </tr>
+             <tr>
+                 <td>1</td>
+                 <td>2</td>
+                 <td>3</td>
+                 <td>4</td>
+                 <td>5</td>
+             </tr>
+         </table>
+    </section>
 </body>
 </html>
