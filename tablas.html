@@ -226,6 +226,27 @@
                  <td>5</td>
              </tr>
          </table>
+         <!--
+        rowspan combina varias filas
+        colspan combina varias columnas
+        Ambos son atributos de la etiqueta <td></td> o 
+        <th></th> jamás de <tr></tr>
+            -->
+            <table>
+               <tr>
+                   <td rowspan="2">a</td>
+                   <td>b</td>
+                   <td>c</td>
+               </tr>
+               <tr>
+                    <td>b</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td colspan="2">b</td>
+                </tr>
+            </table>
     </section>
 </body>
 </html>
