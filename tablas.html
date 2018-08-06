@@ -29,6 +29,7 @@
         .yellow{
             background: yellow;
         }
+      
     </style>
     <title>Tablas HTML</title>
 </head>
@@ -48,7 +49,7 @@
         <h2>Etiquetas table, tr, td</h2>
         <table>
             <tr>
-                <td>Hola mundo</td>
+                <td><a href="">Hola mundo</a></td>
             </tr>
         </table>
         <table>
@@ -99,12 +100,7 @@
                     <th>Ganancia</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="4">Total</td>
-                    <td>$2400.00</td>
-                </tr>
-            </tfoot>
+         
             <tbody>
                 <tr>
                     <td>Enero</td>
@@ -149,6 +145,12 @@
                     <td>$400.00</td>
                 </tr>
             </tbody>
+            <tfoot>
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td>$2400.00</td>
+                    </tr>
+                </tfoot>
         </table>
     </section>
     <section>
@@ -191,7 +193,7 @@
                 <col style="background:red" span="2"><!--representa a la columna dos y 3-->
                
                 <col style="background:green">
-                <col style="background:blue">
+                <col class="red">
                
             </colgroup>
              <tr>
